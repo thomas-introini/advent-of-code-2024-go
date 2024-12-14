@@ -13,6 +13,10 @@ import (
 
 const url = "https://adventofcode.com/2024"
 
+type Point struct {
+	Row, Col int
+}
+
 func MustGetInput(day string) []string {
 	lines, err := GetInput(day)
 	if err != nil {
